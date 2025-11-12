@@ -1,0 +1,22 @@
+# analysis_options.yaml
+# Enterprise-grade lint configuration for Flutter apps
+
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - build/**
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/*.mocks.dart"
+  errors:
+    missing_required_param: error
+    missing_return: error
+    todo: ignore
+    constant_identifier_names: ignore
+
+linter:
+  rules:
+    # ====== STYLE & CONSISTENCY ======
+    prefer_single_quotes: true
+    prefer_const_constructors: true
